@@ -13,7 +13,7 @@ class internalObject{
             response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/${startDate}/${endDate}?key=${KEY}`);
         }
         const weatherData = await response.json();  
-        console.log(weatherData);
+        return(weatherData);
     };
 };
 
