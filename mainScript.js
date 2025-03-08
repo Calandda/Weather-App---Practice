@@ -1,6 +1,7 @@
 import dom from "./DOM/dom.js";
 import internal from "./Internal/internal.js";
-let test = '57DWYW9UQ3UJFFH63FH37X5SH';
+let date = new Date();
 dom.domTest();
-internal.internalTest();
-console.log('test');
+internal.internalTest('philippines',null,null);
+internal.internalTest('philippines',date.getTime()/1000,date.getTime()/1000);
+internal.getWeather();
