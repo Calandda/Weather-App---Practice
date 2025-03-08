@@ -1,9 +1,43 @@
 html{
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    padding: 90px;
 }
 .formInput{
     justify-content: center;
+    display: flex;
+    grid-gap: 0px;
+}
+h1{
+    font-size: 128px;
+}
+.fontHeavy{
+    font-weight: 700;
+}
+.fontBig{
+    font-size: 36px;
+}
+.inputLocation{
+    border: 1px solid;
+    border-radius: 10px 0px 0px 10px;
+    height: 3rem;
+    width: 300px;
+}
+
+.submitLocation{
+    border: 1px solid;
+    border-radius: 0px 10px 10px 0px;
+    height: 3.2rem;
+    width: 10rem;
+    align-self: center;
+}
+
+.submitLocation:hover{
+    background-color: hsl(0, 0%, 75%);
+}
+
+.submitLocation:active{
+    background-color: hsl(0,0%,25%);
 }

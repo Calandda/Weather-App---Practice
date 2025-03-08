@@ -1,10 +1,15 @@
 class domObject{
-    constructor(){
+    constructor(internalObject){
+        const formInput = document.querySelector('.formInput');
+        formInput.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            let formData = new FormData(formInput);
+            console.log(internalObject.getWeather(formData.get('inputLocation'),null,null).currentConditions);
+        });
     };
-    domTest(){
+    test(){
         return('domTest');
     };
 };
 
-const dom = new domObject;
-export default dom;
+export default domObject;
