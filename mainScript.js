@@ -1,6 +1,6 @@
 import dom from "./DOM/dom.js";
 import internal from "./Internal/internal.js";
 
-console.log(dom);
-console.log(internal);
+dom.domTest();
+internal.internalTest();
 console.log('test');
