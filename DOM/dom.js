@@ -32,7 +32,17 @@ class domObject{
         this.weatherCondition = data;
     };
     displayWeatherData(data){
-        console.log(data.currentConditions.conditions);
+        //console.log(data.currentConditions.conditions);
+        this.createMainDisplay();
+    }
+    createMainDisplay(){
+        const body = document.querySelector('body');
+        const sectionMain = document.createElement('section');
+        sectionMain.classList.add('sectionMain');
+
+        body.appendChild(sectionMain);
+    }
+    createElementsDisplay(){
     }
 };
 
