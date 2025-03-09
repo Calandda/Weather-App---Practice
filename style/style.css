@@ -78,7 +78,7 @@ h1{
     flex-direction: row;
     justify-content: space-between; 
     align-content: center;
-    width: 50%;
+    width: 45%;
 }
 
 .sectionData > *{

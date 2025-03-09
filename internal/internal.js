@@ -5,7 +5,7 @@ class internalObject{
         return('internalTest');
     }
     async getWeather(location,startDate,endDate){
-        let KEY = 'PSEGYPSPDNJ2EUM3AMTFCUEWC';
+        let KEY = 'ENTER_KEY';
         let response;
         try{
             
