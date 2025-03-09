@@ -50,19 +50,45 @@ class domObject{
         pLocation.textContent = data.resolvedAddress;
         sectionLocation.classList.add('sectionData');
         imgLocation.classList.add('imgData');
+        imgLocation.classList.add('imgData');
         sectionLocation.appendChild(imgLocation);
         sectionLocation.appendChild(pLocation);
 
         const sectionTime = document.createElement('section');
         const imgTime = document.createElement('img');
         const pTime = document.createElement('p');
-        imgTime.src = './DOM/images/time.svg';
+        imgTime.src = './DOM/images/timer.svg';
         pTime.textContent = data.currentConditions.datetime;
+        pLocation.classList.add('imgData');
         sectionTime.classList.add('sectionData');
+        sectionTime.appendChild(imgTime);
+        sectionTime.appendChild(pTime);
+
+        const sectionCondition = document.createElement('section');
+        const imgCondition = document.createElement('img');
+        const pCondition = document.createElement('p');
+        imgCondition.src = './DOM/images/cloud.svg';
+        pCondition.textContent = data.currentConditions.conditions;
+        pCondition.classList.add('imgData');
+        sectionCondition.classList.add('sectionData');
+        sectionCondition.appendChild(imgCondition);
+        sectionCondition.appendChild(pCondition);
+
+        const sectionTemp = document.createElement('section');
+        const imgTemp = document.createElement('img');
+        const pTemp = document.createElement('p');
+        imgTemp.src = './DOM/images/thermostat.svg';
+        pTemp.textContent = data.currentConditions.temp;
+        pTemp.classList.add('imgData');
+        sectionTemp.classList.add('sectionData');
+        sectionTemp.appendChild(imgTemp);
+        sectionTemp.appendChild(pTemp);
 
         
         sectionMain.appendChild(sectionLocation);
         sectionMain.appendChild(sectionTime);
+        sectionMain.appendChild(sectionCondition);
+        sectionMain.appendChild(sectionTemp);
         body.appendChild(sectionMain);
     }
 };
