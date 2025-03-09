@@ -2,16 +2,26 @@ html{
     height: 100%;
     display: flex;
     align-items: start;
-    justify-content: center;
-    padding: 90px;
+    justify-content: center;    
 }
 .formInput{
     justify-content: center;
     display: flex;
     grid-gap: 0px;
 }
+.logo{
+    margin: 0px 0px -300px -240px;
+    
+}
 h1{
     font-size: 128px;
+    top: -360px;
+    left: 240px;
+    position: relative;
+}
+.imgLogo{
+    height: 400px;
+    position: relative;
 }
 .fontHeavy{
     font-weight: 700;
