@@ -33,16 +33,37 @@ class domObject{
     };
     displayWeatherData(data){
         //console.log(data.currentConditions.conditions);
-        this.createMainDisplay();
+        //this.createMainDisplay();
+        this.createElementsDisplay(data);
     }
-    createMainDisplay(){
-        const body = document.querySelector('body');
+    createElementsDisplay(data){
+        const body = document.querySelector('.divData');
         const sectionMain = document.createElement('section');
         sectionMain.classList.add('sectionMain');
 
+        
+
+        const sectionLocation = document.createElement('section');
+        const imgLocation =document.createElement('img');
+        const pLocation = document.createElement('p');
+        imgLocation.src = './DOM/images/location.svg';
+        pLocation.textContent = data.resolvedAddress;
+        sectionLocation.classList.add('sectionData');
+        imgLocation.classList.add('imgData');
+        sectionLocation.appendChild(imgLocation);
+        sectionLocation.appendChild(pLocation);
+
+        const sectionTime = document.createElement('section');
+        const imgTime = document.createElement('img');
+        const pTime = document.createElement('p');
+        imgTime.src = './DOM/images/time.svg';
+        pTime.textContent = data.currentConditions.datetime;
+        sectionTime.classList.add('sectionData');
+
+        
+        sectionMain.appendChild(sectionLocation);
+        sectionMain.appendChild(sectionTime);
         body.appendChild(sectionMain);
-    }
-    createElementsDisplay(){
     }
 };
 
