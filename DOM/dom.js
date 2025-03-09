@@ -50,7 +50,6 @@ class domObject{
         pLocation.textContent = data.resolvedAddress;
         sectionLocation.classList.add('sectionData');
         imgLocation.classList.add('imgData');
-        imgLocation.classList.add('imgData');
         sectionLocation.appendChild(imgLocation);
         sectionLocation.appendChild(pLocation);
 
@@ -59,7 +58,7 @@ class domObject{
         const pTime = document.createElement('p');
         imgTime.src = './DOM/images/timer.svg';
         pTime.textContent = data.currentConditions.datetime;
-        pLocation.classList.add('imgData');
+        imgTime.classList.add('imgData');
         sectionTime.classList.add('sectionData');
         sectionTime.appendChild(imgTime);
         sectionTime.appendChild(pTime);
@@ -69,7 +68,7 @@ class domObject{
         const pCondition = document.createElement('p');
         imgCondition.src = './DOM/images/cloud.svg';
         pCondition.textContent = data.currentConditions.conditions;
-        pCondition.classList.add('imgData');
+        imgCondition.classList.add('imgData');
         sectionCondition.classList.add('sectionData');
         sectionCondition.appendChild(imgCondition);
         sectionCondition.appendChild(pCondition);
@@ -79,7 +78,7 @@ class domObject{
         const pTemp = document.createElement('p');
         imgTemp.src = './DOM/images/thermostat.svg';
         pTemp.textContent = data.currentConditions.temp;
-        pTemp.classList.add('imgData');
+        imgTemp.classList.add('imgData');
         sectionTemp.classList.add('sectionData');
         sectionTemp.appendChild(imgTemp);
         sectionTemp.appendChild(pTemp);
